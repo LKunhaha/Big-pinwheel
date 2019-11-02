@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: fgg pc, fgg, LIC=HF8WF-6923W-KT03H-WUIJT-VPY1D-STZKB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  D:\Users\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+E:\RM资料\RM程序\风车电机驱动—底盘板\MDK-ARM\Dipan_Board_Test.uvprojx
+Project File Date:  04/13/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Users\MDK\ARM\ARMCC\Bin'
+Build target 'Dipan_Board_Test'
+compiling stm32f4xx_it.c...
+compiling main.c...
+compiling freertos.c...
+.\APP\status_task.h(27): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+../Src/freertos.c: 1 warning, 0 errors
+compiling chassis_task.c...
+APP\chassis_task.c(74): warning:  #177-D: variable "wheel" was declared but never referenced
+  	static float  wheel[4]={0,0,0,0};
+APP\chassis_task.c(76): warning:  #550-D: variable "xLastWakeTime" was set but never used
+  	portTickType xLastWakeTime;
+APP\chassis_task.c(34): warning:  #177-D: variable "Current_set" was declared but never referenced
+  static float Current_set[4] = {0};  //传?莞??????频幕捍?
+APP\chassis_task.c: 3 warnings, 0 errors
+compiling gun_task.c...
+APP\gun_task.c(67): warning:  #177-D: variable "motor_stop_flag" was declared but never referenced
+    uint8_t motor_stop_flag=0;
+APP\gun_task.c(68): warning:  #177-D: variable "set_angle" was declared but never referenced
+  	static int32_t set_angle = 0;
+APP\gun_task.c(69): warning:  #550-D: variable "set_speed" was set but never used
+  	int32_t set_speed = 0;
+APP\gun_task.c(70): warning:  #177-D: variable "set_stir_speed" was declared but never referenced
+    int32_t set_stir_speed = 0;
+APP\gun_task.c(71): warning:  #177-D: variable "set_cnt" was declared but never referenced
+  	static uint8_t set_cnt = 0;
+APP\gun_task.c(72): warning:  #177-D: variable "block_flag" was declared but never referenced
+    static uint8_t block_flag;
+APP\gun_task.c(73): warning:  #177-D: variable "check_time" was declared but never referenced
+    static float check_time = 0;
+APP\gun_task.c(74): warning:  #177-D: variable "contiue_flag" was declared but never referenced
+    static uint8_t contiue_flag = 0;
+APP\gun_task.c: 8 warnings, 0 errors
+compiling data_pro_task.c...
+APP\data_pro_task.c(227): warning:  #177-D: variable "NotifyValue" was declared but never referenced
+  	uint32_t NotifyValue;
+APP\data_pro_task.c(340): warning:  #550-D: variable "xLastWakeTime" was set but never used
+  		 portTickType xLastWakeTime;
+APP\data_pro_task.c: 2 warnings, 0 errors
+compiling test_task.c...
+APP\test_task.h(29): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+APP\test_task.c(66): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+APP\test_task.c: 2 warnings, 0 errors
+compiling BSP.c...
+compiling status_task.c...
+APP\status_task.h(27): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+APP\status_task.c(139): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+APP\status_task.c: 2 warnings, 0 errors
+compiling usart.c...
+compiling tim.c...
+compiling dma.c...
+compiling can.c...
+compiling adc.c...
+compiling gpio.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_timebase_TIM.c...
+compiling Motor_USE_CAN.c...
+MotorDriver\Motor_USE_CAN.c(40): warning:  #177-D: variable "Cloud_Platform_Data" was declared but never referenced
+  static CAN_TxHeaderTypeDef  Cloud_Platform_Data;
+MotorDriver\Motor_USE_CAN.c(41): warning:  #177-D: variable "Allocate_Motor_Data" was declared but never referenced
+  static CAN_TxHeaderTypeDef  Allocate_Motor_Data;
+MotorDriver\Motor_USE_CAN.c(42): warning:  #177-D: variable "CANSend_DP" was declared but never referenced
+  static CAN_TxHeaderTypeDef  CANSend_DP;
+MotorDriver\Motor_USE_CAN.c: 3 warnings, 0 errors
+compiling atom_imu.c...
+compiling decode.c...
+compiling communication.c...
+Communication\communication.c(102): warning:  #177-D: variable "data_sum" was declared but never referenced
+    int16_t data_sum=0;
+Communication\communication.c(103): warning:  #550-D: variable "i" was set but never used
+  	static int16_t i=0;
+Communication\communication.c(106): warning:  #177-D: variable "JY_NUM" was declared but never referenced
+  	uint8_t JY_NUM = 0;
+Communication\communication.c(107): warning:  #177-D: variable "buff_last" was declared but never referenced
+  	static uint8_t buff_last[11] = {0};  	 //??一帧?牟?????
+Communication\communication.c(108): warning:  #177-D: variable "index" was declared but never referenced
+  	static uint8_t index = 0;		
+Communication\communication.c(302): warning:  #177-D: variable "MPU_Rx" was declared but never referenced
+    static uint8_t MPU_Rx, MPU_Tx;
+Communication\communication.c(302): warning:  #550-D: variable "MPU_Tx" was set but never used
+    static uint8_t MPU_Rx, MPU_Tx;
+Communication\communication.c(324): warning:  #550-D: variable "MPU_Tx" was set but never used
+    static uint8_t MPU_Rx, MPU_Tx;
+Communication\communication.c(345): warning:  #177-D: variable "MPU_Rx" was declared but never referenced
+    static uint8_t MPU_Rx, MPU_Tx, MPU_Tx_buff[14] = {0xff};
+Communication\communication.c(345): warning:  #550-D: variable "MPU_Tx_buff" was set but never used
+    static uint8_t MPU_Rx, MPU_Tx, MPU_Tx_buff[14] = {0xff};
+Communication\communication.c(72): warning:  #177-D: variable "ucRxCnt" was declared but never referenced
+  static unsigned char ucRxCnt = 0;
+Communication\communication.c(73): warning:  #177-D: variable "buff_transition" was declared but never referenced
+  static unsigned char buff_transition[11] = {0}; //?啥位捍?
+Communication\communication.c(74): warning:  #177-D: variable "buff_last" was declared but never referenced
+  static unsigned char buff_last[SizeofJY61] = {0};
+Communication\communication.c: 13 warnings, 0 errors
+compiling minipc.c...
+compiling mecanum_calc.c...
+compiling SystemState.c...
+compiling protocol.c...
+compiling pid.c...
+compiling Power_restriction.c...
+Algorithm\Power_restriction.c(335): warning:  #550-D: variable "T0" was set but never used
+  		float T0 = 0;
+Algorithm\Power_restriction.c(336): warning:  #550-D: variable "P0" was set but never used
+  		float P0 = 0;
+Algorithm\Power_restriction.c: 2 warnings, 0 errors
+compiling stm32f4xx_hal_adc_ex.c...
+compiling stm32f4xx_hal_adc.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=16580 RO-data=556 RW-data=172 ZI-data=19948  
+FromELF: creating hex file...
+"Dipan_Board_Test\Dipan_Board_Test.axf" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\RM资料\RM程序\风车电机驱动—底盘板\MDK-ARM\RTE
+  D:\Users\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Users\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:06:27
+</pre>
+</body>
+</html>
